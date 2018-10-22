@@ -1,0 +1,143 @@
+.news-block{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #FFF;
+	&-list{
+		margin-bottom: 30px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&-item{
+		width: 32%;
+		position: relative;
+		border: 1px solid transparent;
+		a{
+			display: block;
+			height: 100%;
+		}
+		&:hover{
+			border-color: #e3e3e3;
+			&:after{
+				background-color: #FFF;
+				transition: background .5s;
+			}
+			.news-block-item{
+				&-hashtag{
+					color: $normal-color;
+					border-color: #e3e3e3;
+				}
+				&-time{
+					border-color: #e3e3e3;
+					time{
+						color: $normal-color;
+					}
+					.more{
+						color: #000;
+					}
+				}
+				&-content{
+					.title{
+						color: #000;
+					}
+					.descr{
+						height: 165px;
+					}
+				}
+			}
+		}
+		&-bg{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -2;
+		}
+		&-hashtag{
+			display: block;
+			padding: 15px 25px;
+			border-bottom: 1px solid #FFF;
+			font-size: 18px;
+			line-height: 1;
+			font-weight: 300;
+			color: #FFF;
+		}
+		&-time{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			padding: 15px 25px;
+			border-top: 1px solid #FFF;
+			font-size: 18px;
+			line-height: 1;
+			color: #FFF;
+			time{
+				font-weight: 600;
+			}
+			.more{
+				font-weight: 300;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		&-content{
+			height: calc(100% - 100px);
+			min-height: 250px;
+			padding: 15px 25px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			justify-content: flex-end;
+			.title{
+				display: block;
+				padding-bottom: 20px;
+				font-family: 'Arvo';
+				font-size: 20px;
+				color: #FFF;
+				text-transform: uppercase;
+			}
+			.descr{
+				height: 0;
+				margin-bottom: 0;
+				color: #5b5b5b;
+				font-size: 16px;
+				line-height: 24px;
+				transition: all 1s;
+				overflow: hidden;
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		&-list{
+
+		}
+		&-item{
+			width: 100%;
+			max-width: 400px;
+			margin-bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

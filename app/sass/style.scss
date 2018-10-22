@@ -1,0 +1,37 @@
+@import "../libs/magnific-popup/dist/magnific-popup.scss";
+@import "../libs/bootstrap/dist/css/bootstrap.min.scss";
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min.scss";
+@import "../libs/normalize-scss/sass/normalize";
+@import "../libs/revealator/fm.revealator.jquery.min.scss";
+@import "../libs/swiper/dist/css/swiper.min.scss";
+
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "main";
+@import "main/popup";
+@import "main/breadcrumbs";
+
+@import "header/header";
+@import "header/header-banner";
+
+@import "main/about-us";
+@import "main/consalt";
+@import "main/why";
+@import "main/cases";
+@import "main/work";
+@import "main/center-banner";
+@import "main/useful";
+@import "main/news";
+@import "main/seo";
+
+@import "main/404";
+@import "main/contacts";
+@import "main/blog";
+@import "main/blog-page";
+@import "main/services";
+@import "main/request";
+
+@import "table";
+
+@import "footer/footer";

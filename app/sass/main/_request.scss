@@ -1,0 +1,147 @@
+.request{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.required-field{
+		color: #FF0000;
+	}
+	.mini-input{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		height: 76px;
+		margin-top: 20px;
+	}
+	.phone-international{
+		width: 49%;
+		font-size: 16px;
+		font-weight: 300;
+		input{
+			width: auto;
+			height: auto;
+		}
+		p{
+			display: inline-block;
+			line-height: 40px;
+			margin-bottom: 0;
+		}
+	}
+	.file-upload{
+		position: relative;
+		width: 49%;
+		font-size: 16px;
+		font-weight: 300;
+		&:hover{
+			svg{
+				filter:none;
+			}
+		}
+		svg{
+			width: 20px;
+			height: 20px;
+			margin-bottom: 8px;
+			object-fit: contain;
+			filter: brightness(0);
+		}
+		input{
+			position: absolute;
+			opacity: 0;
+		}
+		span{
+			display: inline-block;
+			width: calc(100% - 25px);
+		}
+	}
+	&-form{
+		&-item{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			-o-flex-wrap: wrap;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-left: 60px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-top: 1px solid #f0f0f0;
+			.half-block{
+				width: 48%;
+			}
+			label{
+				width: 100%;
+				margin-top: 20px;
+				.title{
+					display: block;
+					width: 100%;
+					padding-left: 20px;
+					font-size: 16px;
+					line-height: 36px;
+					font-weight: 300;
+					color: #454444;
+				}
+				input,select,textarea{
+					width: 100%;
+					height: 40px;
+					padding-left: 25px;
+					border: 1px solid rgba(70,70,70,.5);
+					font-size: 16px;
+					font-weight: 300;
+					&:active,&:focus{
+						outline: none;
+					}
+				}
+				textarea{
+					height: 170px;
+					padding-top: 10px;
+					resize: none;
+				}
+			}
+		}
+		&-title{
+			display: block;
+			width: 100%;
+			font-family: 'Arvo';
+			font-size: 20px;
+			line-height: 30px;
+			color: #454444;
+			text-transform: uppercase;
+		}
+		.site-btn{
+			width: auto;
+			margin-left: 60px;
+			margin-top: 30px;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+	.center-banner-contacts{
+		margin-top: 40px;
+		margin-bottom: 20px;
+		padding-left: 60px;
+		&-item{
+			img,svg{
+				filter: none;
+			}
+			a{
+				color: #000;
+			}
+		}
+	}
+}
+.request-final{
+	.site-btn{
+		display: block;
+		max-width: 360px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

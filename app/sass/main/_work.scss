@@ -1,0 +1,85 @@
+.plan-work{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-image: url("../img/plan-work-bg.jpg");
+	background-size:cover;
+	&-list{
+		list-style-type: none;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		padding-left: 40px;
+		.action{
+			position: absolute;
+			left: -54px;
+			top: 80px;
+			&:hover{
+				.action-move:before{
+				}
+			}
+			.action-move{
+				top: auto;
+				bottom: 0;
+				width: 150px;
+				-webkit-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				transform: rotate(90deg);
+				&:before{
+					background-color: transparent;
+					border-top: 2px dashed #FFF;
+					animation: circle 3s infinite;
+					animation-timing-function: ease;
+				}
+			}
+		}
+	}
+	&-item{
+		position: relative;
+		display: block;
+		margin-bottom: 20px;
+		counter-increment: step-counter;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 300;
+		color: #FFF;
+		&::before {
+	    content: counter(step-counter);
+	    display: inline-block;
+	    position: relative;
+	    top: 3px;
+	    margin-right: 15px;
+	    font-size: 32px;
+	    line-height: 36px;
+	    color: $normal-color;
+		}
+	}
+	.site-btn{
+		margin-left: 75px;
+		background-color: #FFF;
+		color: #000;
+		transition: color .5s, background-color .5s;
+		&:hover{
+			background-color: $active-color;
+			color: #FFF;
+		}
+	}
+	@media only screen and (max-width: 992px) {
+
+	}
+	@media only screen and (max-width: 768px) {
+		&-item{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			&:before{
+				top: 0;
+			}
+		}
+		.site-btn{
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+.why{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-image: url("../img/why-bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	.container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.block-head{
+		width: 100%;
+	}
+	&-list{
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	&-item{
+		width: 45%;
+		max-width: 500px;
+		min-height: 320px;
+		padding: 25px;
+		border: 5px solid #e3e3e4;
+		background-color: #fff;
+		text-align: center;
+		&-title{
+			min-height: 75px;
+			font-size: 20px;
+			line-height: 1.1;
+			font-weight: 300;
+			text-align: left;
+			span{
+				font-size: 22px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+		}
+		ol{
+			max-width: 260px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+			li{
+				margin-top: 5px;
+				margin-bottom: 5px;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+		&-more{
+			display: inline-block;
+			position: relative;
+			padding-right: 18px;
+			margin-top: 20px;
+			text-decoration: underline;
+			font-size: 16px;
+			font-weight: 600;
+			color: $normal-color;
+			&:hover{
+				color: $active-color;
+				text-decoration: underline;
+				&:after{
+					border-color: $active-color;
+				}
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 7px;
+				width: 10px;
+				height: 10px;
+				border-right: 1px solid $normal-color;
+				border-top: 1px solid $normal-color;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&-list{
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			-o-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		&-item{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+			min-height: 0;
+			&-title{
+				min-height: 0;
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&-item{
+			&-title{
+				font-size: 18px;
+				span{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

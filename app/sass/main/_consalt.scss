@@ -1,0 +1,177 @@
+.consalt-block{
+	.container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&-left{
+		width: 50%;
+		padding-right: 30px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&-right{
+		width: 50%;
+		background-image: url('../img/consalt-block-bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+	&-info{
+		padding-left: 60px;
+		padding-right: 10px;
+		height: 200px;
+		overflow-y: auto;
+		p{
+			height: 100%;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 300;
+			color: #4f4f4f;
+		}
+	}
+	&-list{
+		height: calc(100% - 100px);
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 5% 10%;
+		margin-bottom: 0;
+		list-style: none;
+		margin-bottom: 20px;
+	}
+	&-item{
+		width: 50%;
+		height: 50%;
+		padding-top: 20px;
+		text-align: center;
+		color: #FFF;
+		&:first-child{
+			border-right: 1px solid #FFF;
+			border-bottom: 1px solid #FFF;
+		}
+		&:last-child{
+			padding-top: 21px;
+			padding-left: 1px;
+			margin-top: -2px;
+			margin-left: -2px;
+			border-left: 1px solid #FFF;
+			border-top: 1px solid #FFF;
+		}
+		.consalt-number{
+			font-family: 'Arvo';
+			font-size: 40px;
+			line-height: 1;
+			font-weight: 600;
+			&+span{
+				font-family: 'Arvo';
+				font-size: 40px;
+				line-height: 1;
+				font-weight: 600;
+			}
+		}
+		.descr{
+			margin-top: 10px;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 1.2;
+		}
+	}
+	.site-btn{
+
+	}
+	@media only screen and (max-width: 992px) {
+		&-left{
+			width: 100%;
+			padding-right: 0;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		&-right{
+			width: 100%;
+		}
+		&-item{
+			padding-bottom: 10px;
+
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@media only screen and (max-width: 500px) {
+		&-right{
+			padding-bottom: 20px;
+		}
+		&-list{
+			height: auto;
+			margin-bottom: 0;
+		}
+		&-item{
+			width: 100%;
+			border-bottom: 1px solid #FFF;
+			&:first-child{
+				border-right: 0;
+			}
+			&:last-child{
+				border-left:0;
+				border-top:0;
+			}
+		}
+	}
+}
+.about-us-page{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&-head{
+		margin-bottom: 40px;
+		background-image: url('../img/about-us-head.jpg');
+	}
+	&-content{
+		color: #3e3e3e;
+		img{
+			max-width: 550px;
+			width: calc(100% - 40px);
+			float: right;
+			/*margin-bottom: 20px;
+			margin-left: 20px;
+			margin-top: 20px;*/
+			margin: 20px;
+			&:first-of-type{
+				float: left;
+				margin-right: 20px;
+			}
+		}
+		h2{
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-size: 24px;
+			font-weight: 600;
+			&:first-of-type{
+				margin-top: 0;
+			}
+		}
+		p{
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+	}
+	
+}

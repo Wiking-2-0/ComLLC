@@ -1,0 +1,19 @@
+.seo{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f4f4f4;
+	&-content{
+		&-descr{
+			padding: 20px 40px;
+			height: 200px;
+			overflow-y: auto;
+			p{
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 300;
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+	}
+}
